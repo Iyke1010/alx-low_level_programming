@@ -1,24 +1,36 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- * main - print fizzbuzz
- * Return: Always 0
+ * main - entry point
+ *
+ * description: The FIZZ_BUZZ test is an interview question
+ * to print numbers from 1 to 100.
+ * replace multiples of 3 with Fizz
+ * replace multiples of 5 with Buzz
+ * replace multiples of 15 with fizzbuzz
+ *
+ * Return:Always 0
  */
 int main(void)
 {
-	int n;
+	int i;
 
-	printf("1");
-	for (n = 2; n <= 100; n++)
+	for (i = 1; i <= 100; i++)
 	{
-		printf(" ");
-		if (n % 3 == 0)
-			printf("Fizz");
-		if (n % 5 == 0)
+		if (i % 15 == 0)
+			printf("FizzBuzz");
+		else if (i % 5 == 0)
 			printf("Buzz");
-		if (n % 3 != 0 && n % 5 != 0)
-			printf("%d", n);
+		else if (i % 3 == 0)
+			printf("Fizz");
+		else
+
+			printf("%i", i);
+		if (i < 100)
+			printf(" ");
 	}
 	printf("\n");
+
 	return (0);
 }

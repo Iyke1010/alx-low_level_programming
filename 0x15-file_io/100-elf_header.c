@@ -1,20 +1,3 @@
-
-Ausem10
-/
-0x15
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-0x15/100-elf_header.c
-@nanamesua
-nanamesua new
- 1 contributor
-314 lines (286 sloc)  6.69 KB
 #include <elf.h>
 #include <sys/types.h>
 #include <sys/stat.h>
